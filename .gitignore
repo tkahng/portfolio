@@ -13,3 +13,6 @@ __unconfig*
 todos.json
 .superpowers/
 .claude/
+
+# Local Netlify folder
+.netlify
