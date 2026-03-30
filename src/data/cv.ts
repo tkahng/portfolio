@@ -12,6 +12,7 @@ export interface CV {
   name: string
   title: string
   location: string
+  tagline: string
   contact: {
     email: string
     github: string
@@ -32,6 +33,7 @@ export const cv: CV = {
   name: 'Tchunoo Rhee Kahng',
   title: 'Senior Full-Stack Software Engineer',
   location: 'Fullerton, CA',
+  tagline: '12+ years building production systems. Ex-CTO. CMU Architecture.',
   contact: {
     email: 'tkahng@gmail.com',
     github: 'https://github.com/tkahng',

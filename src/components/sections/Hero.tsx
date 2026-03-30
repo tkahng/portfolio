@@ -14,16 +14,16 @@ export default function Hero() {
         {cv.name}
       </h1>
       <p className="mb-2 text-sm text-[var(--sea-ink-soft)]">
-        📍 {cv.location}
+        <span aria-hidden="true">📍</span> {cv.location}
       </p>
       <p className="mx-auto mb-8 max-w-xl text-base text-[var(--sea-ink-soft)] sm:text-lg">
-        12+ years building production systems. Ex-CTO. CMU Architecture.
+        {cv.tagline}
       </p>
 
       <div className="flex flex-wrap items-center justify-center gap-3">
         <Button asChild variant="outline" size="sm">
           <a href={cv.contact.github} target="_blank" rel="noopener noreferrer">
-            <Github className="mr-1.5 h-4 w-4" />
+            <Github aria-hidden="true" className="mr-1.5 h-4 w-4" />
             GitHub
           </a>
         </Button>
@@ -33,19 +33,19 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin className="mr-1.5 h-4 w-4" />
+            <Linkedin aria-hidden="true" className="mr-1.5 h-4 w-4" />
             LinkedIn
           </a>
         </Button>
         <Button asChild variant="outline" size="sm">
           <a href={`mailto:${cv.contact.email}`}>
-            <Mail className="mr-1.5 h-4 w-4" />
+            <Mail aria-hidden="true" className="mr-1.5 h-4 w-4" />
             {cv.contact.email}
           </a>
         </Button>
         <Button asChild size="sm">
           <a href="/tkahng-cv.pdf" download>
-            <Download className="mr-1.5 h-4 w-4" />
+            <Download aria-hidden="true" className="mr-1.5 h-4 w-4" />
             Download CV
           </a>
         </Button>

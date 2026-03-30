@@ -83,4 +83,8 @@ describe('cv data', () => {
   it('skills object has at least 4 categories', () => {
     expect(Object.keys(cv.skills).length).toBeGreaterThanOrEqual(4)
   })
+
+  it('has a tagline', () => {
+    expect(cv.tagline).toBeTruthy()
+  })
 })

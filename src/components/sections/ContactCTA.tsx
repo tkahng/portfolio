@@ -16,13 +16,13 @@ export default function ContactCTA() {
       <div className="flex flex-wrap items-center justify-center gap-3">
         <Button asChild>
           <a href={`mailto:${cv.contact.email}`}>
-            <Mail className="mr-1.5 h-4 w-4" />
+            <Mail aria-hidden="true" className="mr-1.5 h-4 w-4" />
             {cv.contact.email}
           </a>
         </Button>
         <Button asChild variant="outline">
           <a href={cv.contact.github} target="_blank" rel="noopener noreferrer">
-            <Github className="mr-1.5 h-4 w-4" />
+            <Github aria-hidden="true" className="mr-1.5 h-4 w-4" />
             GitHub
           </a>
         </Button>
@@ -32,7 +32,7 @@ export default function ContactCTA() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Linkedin className="mr-1.5 h-4 w-4" />
+            <Linkedin aria-hidden="true" className="mr-1.5 h-4 w-4" />
             LinkedIn
           </a>
         </Button>

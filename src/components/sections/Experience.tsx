@@ -12,7 +12,10 @@ export default function Experience() {
         <ol className="relative border-l border-[var(--line)]">
           {cv.experience.map((entry) => (
             <li key={entry.company} className="mb-8 ml-6 last:mb-0">
-              <span className="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full border border-[var(--lagoon)] bg-[var(--foam)]">
+              <span
+                aria-hidden="true"
+                className="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full border border-[var(--lagoon)] bg-[var(--foam)]"
+              >
                 <span className="h-2 w-2 rounded-full bg-[var(--lagoon)]" />
               </span>
               <p className="island-kicker mb-0.5">{entry.period}</p>
