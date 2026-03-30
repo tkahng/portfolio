@@ -57,6 +57,20 @@ function ProjectDetail() {
       </div>
 
       <div className="space-y-8">
+        {project.url && (
+          <section>
+            <p className="island-kicker mb-3">Links</p>
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lagoon-deep)] hover:underline"
+            >
+              View project →
+            </a>
+          </section>
+        )}
+
         <section>
           <p className="island-kicker mb-2">The Problem</p>
           <p className="leading-relaxed text-[var(--sea-ink-soft)]">
@@ -92,6 +106,7 @@ function ProjectDetail() {
             ))}
           </div>
         </section>
+
       </div>
 
       <Separator className="my-10" />

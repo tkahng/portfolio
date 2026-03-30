@@ -11,6 +11,7 @@ export interface Project {
   problem: string
   contributions: string[]
   stack: string[]
+  url?: string
 }
 
 export const projects: Project[] = [
@@ -43,6 +44,7 @@ export const projects: Project[] = [
       'OAuth2',
       'Docker',
     ],
+    url: 'https://playground.k2dv.io',
   },
   {
     slug: 'builderful',
