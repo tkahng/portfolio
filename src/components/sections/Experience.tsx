@@ -11,7 +11,10 @@ export default function Experience() {
       <div className="island-shell rounded-2xl px-6 py-6 sm:px-8">
         <ol className="relative border-l border-[var(--line)]">
           {cv.experience.map((entry) => (
-            <li key={entry.company} className="mb-8 ml-6 last:mb-0">
+            <li
+              key={`${entry.company}-${entry.period}`}
+              className="mb-8 ml-6 last:mb-0"
+            >
               <span
                 aria-hidden="true"
                 className="absolute -left-2 flex h-4 w-4 items-center justify-center rounded-full border border-[var(--lagoon)] bg-[var(--foam)]"

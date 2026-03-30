@@ -1,7 +1,7 @@
 // src/components/sections/Hero.tsx
 import { cv } from '../../data/cv'
 import { Button } from '../ui/button'
-import { Github, Linkedin, Mail, Download } from 'lucide-react'
+import { Github, Linkedin, Mail } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -41,12 +41,6 @@ export default function Hero() {
           <a href={`mailto:${cv.contact.email}`}>
             <Mail aria-hidden="true" className="mr-1.5 h-4 w-4" />
             {cv.contact.email}
-          </a>
-        </Button>
-        <Button asChild size="sm">
-          <a href="/tkahng-cv.pdf" download>
-            <Download aria-hidden="true" className="mr-1.5 h-4 w-4" />
-            Download CV
           </a>
         </Button>
       </div>

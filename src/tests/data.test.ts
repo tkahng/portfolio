@@ -60,6 +60,12 @@ describe('getAdjacentProjects', () => {
     expect(prev).not.toBeNull()
     expect(next).not.toBeNull()
   })
+
+  it('returns null for both when slug is unknown', () => {
+    const { prev, next } = getAdjacentProjects('nonexistent')
+    expect(prev).toBeNull()
+    expect(next).toBeNull()
+  })
 })
 
 describe('cv data', () => {

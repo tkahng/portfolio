@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import { Link } from '@tanstack/react-router'
+import { projects } from '../data/projects'
 import ThemeToggle from './ThemeToggle'
 
 export default function Header() {
@@ -26,8 +27,9 @@ export default function Header() {
           </Link>
           <Link
             to="/projects/$slug"
-            params={{ slug: 'builderful' }}
+            params={{ slug: projects[0].slug }}
             className="nav-link"
+            activeProps={{ className: 'nav-link is-active' }}
           >
             Projects
           </Link>
