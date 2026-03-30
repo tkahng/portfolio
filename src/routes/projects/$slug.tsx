@@ -43,13 +43,12 @@ function ProjectDetail() {
         />
       </div>
 
-      <div className="island-shell mb-8 grid grid-cols-2 gap-4 rounded-2xl px-6 py-5 sm:px-8">
-        <div>
+      <div className="island-shell mb-8 flex flex-col divide-y divide-[var(--line)] rounded-2xl px-6 py-5 sm:flex-row sm:divide-x sm:divide-y-0 sm:px-8">
+        <div className="pb-4 sm:pb-0 sm:pr-6">
           <p className="island-kicker mb-1">My Role</p>
           <p className="font-medium text-[var(--sea-ink)]">{project.role}</p>
         </div>
-        <Separator orientation="vertical" className="hidden sm:block" />
-        <div>
+        <div className="pt-4 sm:pl-6 sm:pt-0">
           <p className="island-kicker mb-1">Company & Period</p>
           <p className="font-medium text-[var(--sea-ink)]">
             {project.company} · {project.period}
