@@ -14,7 +14,7 @@ export default function ContactCTA() {
         Open to senior engineering roles and interesting problems.
       </p>
       <div className="flex flex-wrap items-center justify-center gap-3">
-        <Button asChild>
+        <Button asChild variant="outline">
           <a href={`mailto:${cv.contact.email}`}>
             <Mail aria-hidden="true" className="mr-1.5 h-4 w-4" />
             {cv.contact.email}
