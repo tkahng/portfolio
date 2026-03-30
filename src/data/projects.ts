@@ -11,9 +11,41 @@ export interface Project {
   problem: string
   contributions: string[]
   stack: string[]
+  url?: string
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'playground',
+    title: 'Playground',
+    description:
+      'Full-stack SaaS starter — multi-tenant teams, kanban project management, real-time notifications, and a full RBAC admin panel.',
+    image: '/projects/playground-rockpaperscissors.png',
+    role: 'Sole Developer',
+    company: 'Personal / Sabbatical',
+    period: '2025',
+    problem:
+      'Building production-grade SaaS features from scratch is repetitive and error-prone. I wanted a well-architected reference implementation covering auth, multi-tenancy, permissions, real-time updates, and admin tooling — built end-to-end without third-party services.',
+    contributions: [
+      'Built a Go REST API backend with multi-provider authentication (email/password with email verification, Google OAuth2, GitHub OAuth2) inspired by Supabase GoTrue — all providers share a unified callback endpoint.',
+      'Designed a flexible RBAC permission model supporting direct assignment, role-based assignment, and subscription-based role grants.',
+      'Implemented multi-tenant teams: users can create or join teams and invite others via invite links.',
+      'Built a kanban task board with drag-and-drop, project grouping, and real-time due-date alerts delivered over Server-Sent Events (SSE).',
+      'Developed a full admin panel covering user management, role and permission CRUD, product/subscription management, and audit views.',
+      'Wrote the React SPA frontend (TypeScript) consuming the Go API, with CI via GitHub Actions.',
+    ],
+    stack: [
+      'Go',
+      'PostgreSQL',
+      'PLpgSQL',
+      'TypeScript',
+      'React',
+      'SSE',
+      'OAuth2',
+      'Docker',
+    ],
+    url: 'https://playground.k2dv.io',
+  },
   {
     slug: 'builderful',
     title: 'Builderful',
@@ -102,6 +134,7 @@ export const projects: Project[] = [
       'Jira API',
     ],
   },
+
   {
     slug: 'construckit',
     title: 'Construckit',
