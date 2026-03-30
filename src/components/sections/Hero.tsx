@@ -14,7 +14,7 @@ export default function Hero() {
         {cv.name}
       </h1>
       <p className="mb-2 text-sm text-[var(--sea-ink-soft)]">
-        <span aria-hidden="true">📍</span> {cv.location}
+        {cv.location}
       </p>
       <p className="mx-auto mb-8 max-w-xl text-base text-[var(--sea-ink-soft)] sm:text-lg">
         {cv.tagline}
