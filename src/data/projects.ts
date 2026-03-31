@@ -4,7 +4,7 @@ export interface Project {
   slug: string
   title: string
   description: string
-  image: string
+  images: string[]
   role: string
   company: string
   period: string
@@ -20,7 +20,11 @@ export const projects: Project[] = [
     title: 'Playground',
     description:
       'Full-stack SaaS starter — multi-tenant teams, kanban project management, real-time notifications, and a full RBAC admin panel.',
-    image: '/projects/playground-rockpaperscissors.png',
+    images: [
+      '/projects/playground-rockpaperscissors.png',
+      '/projects/playground-play.png',
+      '/projects/playground-sayhello.png',
+    ],
     role: 'Sole Developer',
     company: 'Personal / Sabbatical',
     period: '2025',
@@ -51,7 +55,7 @@ export const projects: Project[] = [
     title: 'Builderful',
     description:
       'Construction materials e-commerce platform — search, vendor quotes, order management, and payments.',
-    image: '/projects/builderful.png',
+    images: ['/projects/builderful.png'],
     role: 'Lead Backend Engineer',
     company: 'Qwerky Inc',
     period: '2020 – 2024',
@@ -83,7 +87,7 @@ export const projects: Project[] = [
     title: 'Deepform',
     description:
       'Browser-based 3D model analysis engine for architects — classifies geometry and produces floor area breakdowns.',
-    image: '/projects/deepform.png',
+    images: ['/projects/deepform.png'],
     role: 'Sole Developer',
     company: 'Qwerky Inc',
     period: '2020 – 2024',
@@ -112,7 +116,7 @@ export const projects: Project[] = [
     title: 'Markurz',
     description:
       'Productivity browser extension — clip highlighted web content directly into Notion, Jira, Trello, or Microsoft To Do.',
-    image: '/projects/markurz.png',
+    images: ['/projects/markurz.png'],
     role: 'Backend Engineer',
     company: 'Qwerky Inc',
     period: '2020 – 2024',
@@ -140,7 +144,7 @@ export const projects: Project[] = [
     title: 'Construckit',
     description:
       'Construction project management SaaS — approval workflows and document sharing for construction teams.',
-    image: '/projects/construckit.png',
+    images: ['/projects/construckit.png'],
     role: 'Backend Engineer',
     company: 'Qwerky Inc',
     period: '2020 – 2024',
