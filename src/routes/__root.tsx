@@ -42,7 +42,7 @@ export const Route = createRootRoute({
       {
         name: 'description',
         content:
-          'Senior full-stack engineer with 12+ years building production systems. Ex-CTO, CMU Architecture grad. Based in Fullerton, CA.',
+          'Senior full-stack engineer with 12+ years building production systems. Former CTO, CMU Architecture grad. Based in Fullerton, CA.',
       },
     ],
     links: [{ rel: 'stylesheet', href: appCss }],

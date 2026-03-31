@@ -33,7 +33,7 @@ export const cv: CV = {
   name: 'Tchunoo Rhee Kahng',
   title: 'Senior Full-Stack Software Engineer',
   location: 'Fullerton, CA',
-  tagline: '12+ years building production systems. Ex-CTO. CMU Architecture.',
+  tagline: '12+ years building production systems. Former CTO. CMU Architecture.',
   contact: {
     email: 'tkahng@gmail.com',
     github: 'https://github.com/tkahng',
