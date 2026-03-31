@@ -18,7 +18,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       <Card className="feature-card h-full overflow-hidden border-[var(--line)] bg-transparent transition-transform hover:-translate-y-1">
         <div className="aspect-video w-full overflow-hidden">
           <img
-            src={project.image}
+            src={project.images[0]}
             alt={project.title}
             className="h-full w-full object-cover"
           />

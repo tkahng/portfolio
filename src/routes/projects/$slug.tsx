@@ -36,12 +36,30 @@ function ProjectDetail() {
       </header>
 
       <div className="island-shell mb-8 overflow-hidden rounded-2xl">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="aspect-video w-full object-cover"
-        />
+        <a href={project.images[0]} target="_blank" rel="noopener noreferrer">
+          <img
+            src={project.images[0]}
+            alt={project.title}
+            className="aspect-video w-full cursor-pointer object-cover"
+          />
+        </a>
       </div>
+
+      {project.images.length > 1 && (
+        <div className="mb-8 grid grid-cols-2 gap-4">
+          {project.images.slice(1).map((src, i) => (
+            <div key={i} className="island-shell overflow-hidden rounded-2xl">
+              <a href={src} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={src}
+                  alt={`${project.title} screenshot ${i + 2}`}
+                  className="aspect-video w-full cursor-pointer object-cover"
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      )}
 
       <div className="island-shell mb-8 flex flex-col divide-y divide-[var(--line)] rounded-2xl px-6 py-5 sm:flex-row sm:divide-x sm:divide-y-0 sm:px-8">
         <div className="pb-4 sm:pb-0 sm:pr-6">
