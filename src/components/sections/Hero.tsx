@@ -10,13 +10,13 @@ export default function Hero() {
       <div className="pointer-events-none absolute -bottom-20 -right-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,rgba(47,106,74,0.18),transparent_66%)]" />
 
       <p className="island-kicker mb-3">{cv.title}</p>
-      <h1 className="display-title mb-3 text-4xl font-bold leading-tight tracking-tight text-[var(--sea-ink)] sm:text-5xl">
+      <h1 className="display-title mb-3 text-4xl font-bold leading-tight tracking-tight text-(--sea-ink) sm:text-5xl">
         {cv.name}
       </h1>
-      <p className="mb-2 text-sm text-[var(--sea-ink-soft)]">
+      <p className="mb-2 text-sm text-(--sea-ink-soft)">
         {cv.location}
       </p>
-      <p className="mx-auto mb-8 max-w-xl text-base text-[var(--sea-ink-soft)] sm:text-lg">
+      <p className="mx-auto mb-8 max-w-xl text-base text-(--sea-ink-soft) sm:text-lg">
         {cv.tagline}
       </p>
 
