@@ -81,6 +81,7 @@ export const projects: Project[] = [
       'AWS RDS',
       'Docker',
     ],
+    url: 'https://www.instagram.com/builderful/'
   },
   {
     slug: 'deepform',
@@ -110,6 +111,7 @@ export const projects: Project[] = [
       'BullMQ',
       'Hypar Elements',
     ],
+    url: 'https://docs.deepform.net/'
   },
   {
     slug: 'markurz',
@@ -137,6 +139,7 @@ export const projects: Project[] = [
       'Notion API',
       'Jira API',
     ],
+    url: 'https://markurzblog.webflow.io/'
   },
 
   {
