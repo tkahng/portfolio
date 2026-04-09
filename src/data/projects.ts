@@ -171,13 +171,12 @@ export const projects: Project[] = [
   {
     slug: 'masan-ocean-city',
     title: 'Masan Ocean City',
-    description:
-      'A new city on the coast of Masan, a coastal city in South Korea.',
+    description: '',
     images: [
-      '/projects/masan-main.jpg',
+      '/projects/masan-main.jpeg',
       '/projects/masan-entry.jpg',
       '/projects/masan-model.jpg',
-      '/projects/masan-site.jpg',
+      '/projects/masan-site.jpeg',
     ],
     role: 'Computation Design Engineer',
     company: 'Insigong',
