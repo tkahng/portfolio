@@ -187,6 +187,7 @@ export const projects: Project[] = [
       'Python/C# development for custom design tooling',
       'Design and 3d modeling of the "Fish Scale Music Hall"',
       'Won 1st place in the 2015 Korean Design Competition',
+      'In collaboration with Gehry Partners',
     ],
     stack: [
       'Python',
