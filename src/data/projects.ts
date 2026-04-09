@@ -81,7 +81,7 @@ export const projects: Project[] = [
       'AWS RDS',
       'Docker',
     ],
-    url: 'https://www.instagram.com/builderful/'
+    url: 'https://www.instagram.com/builderful/',
   },
   {
     slug: 'deepform',
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       'BullMQ',
       'Hypar Elements',
     ],
-    url: 'https://docs.deepform.net/'
+    url: 'https://docs.deepform.net/',
   },
   {
     slug: 'markurz',
@@ -139,7 +139,7 @@ export const projects: Project[] = [
       'Notion API',
       'Jira API',
     ],
-    url: 'https://markurzblog.webflow.io/'
+    url: 'https://markurzblog.webflow.io/',
   },
 
   {
@@ -166,6 +166,35 @@ export const projects: Project[] = [
       'BullMQ',
       'PostgreSQL',
       'Azure',
+    ],
+  },
+  {
+    slug: 'masan-ocean-city',
+    title: 'Masan Ocean City',
+    description: '',
+    images: [
+      '/projects/masan-main.jpeg',
+      '/projects/masan-entry.jpg',
+      '/projects/masan-model.jpg',
+      '/projects/masan-site.jpeg',
+    ],
+    role: 'Computation Design Engineer',
+    company: 'Insigong',
+    period: '2014-2016',
+    problem:
+      'Designing a new city on the coast of Masan, a coastal city in South Korea, required a complex and detailed design that involved a lot of engineering analysis and a lot of collaboration with local stakeholders.',
+    contributions: [
+      'Python/C# development for custom design tooling',
+      'Design and 3d modeling of the "Fish Scale Music Hall"',
+      'Won 1st place in the 2015 Korean Design Competition',
+    ],
+    stack: [
+      'Python',
+      'C#',
+      'Dotnet',
+      'Rhino3dm',
+      'Autodesk Revit',
+      'Grasshopper3d',
     ],
   },
 ]
