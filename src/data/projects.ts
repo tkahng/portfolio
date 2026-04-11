@@ -177,6 +177,7 @@ export const projects: Project[] = [
       '/projects/masan-entry.jpg',
       '/projects/masan-model.jpg',
       '/projects/masan-site.jpeg',
+      '/projects/masan-frank-gehry-autograph.png',
     ],
     role: 'Computation Design Engineer',
     company: 'Insigong',
