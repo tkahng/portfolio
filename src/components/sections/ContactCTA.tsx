@@ -5,11 +5,9 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 
 export default function ContactCTA() {
   return (
-    <section className="island-shell rounded-2xl px-6 py-10 text-center sm:px-10">
+    <section className="island-shell px-6 py-10 text-center sm:px-10">
       <p className="island-kicker mb-3">Contact</p>
-      <h2 className="mb-4 text-3xl font-bold text-foreground">
-        Get in touch
-      </h2>
+      <h2 className="mb-4 text-3xl font-bold text-foreground">Get in touch</h2>
       <p className="mx-auto mb-8 max-w-md text-muted-foreground">
         Open to senior engineering roles and interesting problems.
       </p>

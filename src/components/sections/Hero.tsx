@@ -6,16 +6,11 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 export default function Hero() {
   return (
     <section className="island-shell rise-in relative overflow-hidden px-6 py-10 text-center sm:px-10 sm:py-14">
-      <div className="pointer-events-none absolute -left-20 -top-24 h-56 w-56 rounded-full bg-[radial-gradient(circle,oklch(0.708_0_0_/_0.2),transparent_66%)]" />
-      <div className="pointer-events-none absolute -bottom-20 -right-20 h-56 w-56 rounded-full bg-[radial-gradient(circle,oklch(0.556_0_0_/_0.12),transparent_66%)]" />
-
       <p className="island-kicker mb-3">{cv.title}</p>
       <h1 className="mb-3 text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl">
         {cv.name}
       </h1>
-      <p className="mb-2 text-sm text-muted-foreground">
-        {cv.location}
-      </p>
+      <p className="mb-2 text-sm text-muted-foreground">{cv.location}</p>
       <p className="mx-auto mb-8 max-w-xl text-base text-muted-foreground sm:text-lg">
         {cv.tagline}
       </p>

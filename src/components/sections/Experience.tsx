@@ -5,10 +5,8 @@ export default function Experience() {
   return (
     <section>
       <p className="island-kicker mb-4">Career</p>
-      <h2 className="mb-6 text-2xl font-bold text-foreground">
-        Experience
-      </h2>
-      <div className="island-shell rounded-2xl px-6 py-6 sm:px-8">
+      <h2 className="mb-6 text-2xl font-bold text-foreground">Experience</h2>
+      <div className="island-shell px-6 py-6 sm:px-8">
         <ol className="relative border-l border-border">
           {cv.experience.map((entry) => (
             <li
