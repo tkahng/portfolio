@@ -15,15 +15,15 @@ function NotFound() {
   return (
     <main className="page-wrap flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
       <p className="island-kicker mb-3">404</p>
-      <h1 className="display-title mb-4 text-3xl font-bold text-[var(--sea-ink)]">
+      <h1 className="mb-4 text-3xl font-bold text-foreground">
         Page not found
       </h1>
-      <p className="mb-6 text-[var(--sea-ink-soft)]">
+      <p className="mb-6 text-muted-foreground">
         This page doesn't exist.
       </p>
       <Link
         to="/"
-        className="rounded-full border border-[rgba(50,143,151,0.3)] bg-[rgba(79,184,178,0.14)] px-5 py-2.5 text-sm font-semibold text-[var(--lagoon-deep)] no-underline transition hover:-translate-y-0.5 hover:bg-[rgba(79,184,178,0.24)]"
+        className="rounded-full border border-border bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground no-underline transition hover:-translate-y-0.5 hover:bg-accent"
       >
         Back to home
       </Link>
@@ -56,7 +56,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <HeadContent />
       </head>
-      <body className="font-sans antialiased [overflow-wrap:anywhere] selection:bg-[rgba(79,184,178,0.24)]">
+      <body className="font-sans antialiased [overflow-wrap:anywhere] selection:bg-primary/20">
         <Header />
         {children}
         <Footer />
