@@ -21,16 +21,16 @@ function ProjectDetail() {
     <main className="page-wrap px-4 pb-16 pt-10">
       <Link
         to="/"
-        className="mb-8 inline-block text-sm font-medium text-[var(--lagoon-deep)] no-underline hover:underline"
+        className="mb-8 inline-block text-sm font-medium text-foreground no-underline hover:underline"
       >
         ← All projects
       </Link>
 
       <header className="mb-8">
-        <h1 className="display-title mb-2 text-4xl font-bold text-[var(--sea-ink)] sm:text-5xl">
+        <h1 className="mb-2 text-4xl font-bold text-foreground sm:text-5xl">
           {project.title}
         </h1>
-        <p className="text-[var(--sea-ink-soft)]">
+        <p className="text-muted-foreground">
           {project.company} · {project.period}
         </p>
       </header>
@@ -64,11 +64,11 @@ function ProjectDetail() {
       <div className="island-shell mb-8 flex flex-col divide-y divide-[var(--line)] rounded-2xl px-6 py-5 sm:flex-row sm:divide-x sm:divide-y-0 sm:px-8">
         <div className="pb-4 sm:pb-0 sm:pr-6">
           <p className="island-kicker mb-1">My Role</p>
-          <p className="font-medium text-[var(--sea-ink)]">{project.role}</p>
+          <p className="font-medium text-foreground">{project.role}</p>
         </div>
         <div className="pt-4 sm:pl-6 sm:pt-0">
           <p className="island-kicker mb-1">Company & Period</p>
-          <p className="font-medium text-[var(--sea-ink)]">
+          <p className="font-medium text-foreground">
             {project.company} · {project.period}
           </p>
         </div>
@@ -82,7 +82,7 @@ function ProjectDetail() {
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--lagoon-deep)] hover:underline"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:underline"
             >
               View project →
             </a>
@@ -91,7 +91,7 @@ function ProjectDetail() {
 
         <section>
           <p className="island-kicker mb-2">The Problem</p>
-          <p className="leading-relaxed text-[var(--sea-ink-soft)]">
+          <p className="leading-relaxed text-muted-foreground">
             {project.problem}
           </p>
         </section>
@@ -102,11 +102,11 @@ function ProjectDetail() {
             {project.contributions.map((item, i) => (
               <li
                 key={i}
-                className="flex gap-3 leading-relaxed text-[var(--sea-ink-soft)]"
+                className="flex gap-3 leading-relaxed text-muted-foreground"
               >
                 <span
                   aria-hidden="true"
-                  className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--lagoon)]"
+                  className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-foreground"
                 />
                 {item}
               </li>
@@ -138,7 +138,7 @@ function ProjectDetail() {
               className="group flex flex-col text-sm no-underline"
             >
               <span className="island-kicker">Previous</span>
-              <span className="font-semibold text-[var(--sea-ink)] group-hover:text-[var(--lagoon-deep)]">
+              <span className="font-semibold text-foreground group-hover:text-muted-foreground">
                 ← {prev.title}
               </span>
             </Link>
@@ -152,7 +152,7 @@ function ProjectDetail() {
               className="group flex flex-col text-sm no-underline"
             >
               <span className="island-kicker">Next</span>
-              <span className="font-semibold text-[var(--sea-ink)] group-hover:text-[var(--lagoon-deep)]">
+              <span className="font-semibold text-foreground group-hover:text-muted-foreground">
                 {next.title} →
               </span>
             </Link>

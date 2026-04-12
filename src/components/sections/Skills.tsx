@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section>
       <p className="island-kicker mb-4">Skills</p>
-      <h2 className="mb-6 text-2xl font-bold text-[var(--sea-ink)]">
+      <h2 className="mb-6 text-2xl font-bold text-foreground">
         Tech Stack
       </h2>
       <div className="island-shell rounded-2xl px-6 py-6 sm:px-8">

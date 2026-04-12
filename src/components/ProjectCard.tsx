@@ -24,10 +24,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           />
         </div>
         <CardContent className="p-5">
-          <h3 className="mb-1 text-base font-semibold text-[var(--sea-ink)]">
+          <h3 className="mb-1 text-base font-semibold text-foreground">
             {project.title}
           </h3>
-          <p className="mb-3 text-sm leading-relaxed text-[var(--sea-ink-soft)]">
+          <p className="mb-3 text-sm leading-relaxed text-muted-foreground">
             {project.description}
           </p>
           <div className="mb-3 flex flex-wrap gap-1.5">
@@ -37,7 +37,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               </Badge>
             ))}
           </div>
-          <p className="text-xs font-semibold text-[var(--lagoon-deep)]">
+          <p className="text-xs font-semibold text-foreground">
             View project →
           </p>
         </CardContent>
