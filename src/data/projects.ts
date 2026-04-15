@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: 'playground',
     title: 'Playground',
     description:
-      'Full-stack SaaS starter — multi-tenant teams, kanban project management, real-time notifications, and a full RBAC admin panel.',
+      'My personal feature playground — multi-tenant teams, kanban project management, real-time notifications, and a full RBAC admin panel.',
     images: [
       '/projects/playground-rockpaperscissors.png',
       '/projects/playground-play.png',
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     company: 'Personal / Sabbatical',
     period: '2025',
     problem:
-      'Building production-grade SaaS features from scratch is repetitive and error-prone. I wanted a well-architected reference implementation covering auth, multi-tenancy, permissions, real-time updates, and admin tooling — built end-to-end without third-party services.',
+      'Personal project where I can implement any feature I think is cool.',
     contributions: [
       'Built a Go REST API backend with multi-provider authentication (email/password with email verification, Google OAuth2, GitHub OAuth2) inspired by Supabase GoTrue — all providers share a unified callback endpoint.',
       'Designed a flexible RBAC permission model supporting direct assignment, role-based assignment, and subscription-based role grants.',
