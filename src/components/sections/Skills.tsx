@@ -5,8 +5,7 @@ import { Badge } from '../ui/badge'
 export default function Skills() {
   return (
     <section>
-      <p className="island-kicker mb-4">Skills</p>
-      <h2 className="mb-6 text-2xl font-bold text-foreground">Tech Stack</h2>
+      <h2 className="mb-6 text-2xl font-bold text-foreground">Skills</h2>
       <div className="island-shell px-6 py-6 sm:px-8">
         <div className="space-y-4">
           {Object.entries(cv.skills).map(([category, techs]) => (
