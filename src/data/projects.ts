@@ -12,9 +12,43 @@ export interface Project {
   contributions: string[]
   stack: string[]
   url?: string
+  repository?: string
 }
 
 export const projects: Project[] = [
+  {
+    slug: 'garden',
+    title: 'Garden',
+    description: 'B2B-focused e-commerce platform',
+    images: [
+      '/projects/garden-product-page.png',
+      '/projects/garden-home-page.png',
+    ],
+    role: 'Sole Developer',
+    company: 'Personal / Sabbatical',
+    period: '2026',
+    problem:
+      'Most e-commerce platforms are B2C focused, not B2B. The Garden is a natively B2B e-commerce application built for businesses.',
+    contributions: [
+      'Agenic-engineered with claude code',
+      'Store-front with customer/company accounts, products, quotes, cart, and payemnt.',
+      'Admin for managing catalogue, customer/company, order fulfillment, discounts, inventory, staff management.',
+      'Spring Boot backend for optimal runtime performance, stability, and developer experience.',
+    ],
+    stack: [
+      'Java',
+      'PostgreSQL',
+      'Spring Boot',
+      'PLpgSQL',
+      'TypeScript',
+      'React',
+      'SSE',
+      'OAuth2',
+      'Docker',
+    ],
+    url: 'https://garden-web.k2dv.io',
+    repository: 'https://github.com/tkahng/garden',
+  },
   {
     slug: 'playground',
     title: 'Playground',
@@ -49,6 +83,7 @@ export const projects: Project[] = [
       'Docker',
     ],
     url: 'https://playground.k2dv.io',
+    repository: 'https://github.com/tkahng/playground',
   },
   {
     slug: 'builderful',

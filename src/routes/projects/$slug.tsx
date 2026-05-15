@@ -88,6 +88,19 @@ function ProjectDetail() {
             </a>
           </section>
         )}
+        {project.repository && (
+          <section>
+            <p className="island-kicker mb-3">Repository</p>
+            <a
+              href={project.repository}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:underline"
+            >
+              View Repository →
+            </a>
+          </section>
+        )}
 
         <section>
           <p className="island-kicker mb-2">The Problem</p>
@@ -124,7 +137,6 @@ function ProjectDetail() {
             ))}
           </div>
         </section>
-
       </div>
 
       <Separator className="my-10" />
